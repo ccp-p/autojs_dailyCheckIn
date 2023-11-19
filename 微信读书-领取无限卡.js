@@ -10,7 +10,8 @@ unlock.unlock();
 
 
 // maid.kill();
-// maid.sleep(2);
+maid.sleep(2);
+
 maid.launch();
 
 const clickCenter = function (sel)  {
@@ -22,9 +23,24 @@ const clickCenter = function (sel)  {
 }
 //  找到我的按钮Z
 text("阅读").waitFor();
+const meBounds = '810,1752,1080,1920'
+
+setScreenMetrics(1080, 1920);
+// click('我')
+click(meBounds)
+
+sleep(1000)
+
+click('可兑')
 
 
-toastLog("开始执行");
+sleep(1000)
+
+click('时长兑福利')
+
+sleep(1000)
+
+
 const bound = text("领取")
 
 scrollDown()
@@ -43,7 +59,12 @@ while(getFind.find().length>0){
     
         clickCenter(item)
         const watchVideo = text("看视频兑换").findOne()
-         if(!watchVideo) return
+         const get = text("领 取").findOne()
+         if(!watchVideo) return false
+         if(get){
+            clickCenter(get)
+            return false
+         } 
         sleep(1000)
     
         clickCenter(watchVideo)
