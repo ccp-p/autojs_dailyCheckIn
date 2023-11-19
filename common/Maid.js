@@ -13,12 +13,14 @@ function Maid(packageName) {
     this.clickCenter = function (widget) {
         if (!widget)
             return false;
+
         let rect = widget.bounds();
         return click(rect.centerX(), rect.centerY());
     };
     this.clickSelectorCenter = function (selector) {
         if (!selector)
             return false;
+        toast("点击: " + selector)
         let widget = selector.findOne(2000);
         return this.clickCenter(widget);
     };
@@ -50,6 +52,22 @@ function Maid(packageName) {
             return false;
         return this.clickSelectorCenter(text(str));
     };
+    this.searchByText = function (str,duration=2000) {
+        if (!str)
+            return false;
+        return textMatches(str).findTimeout(duration)
+    }
+
+    this.findTimeout =   function findTimeout(findF, timeout) {
+            let c = 0
+            while (c < timeout / 50) {
+                let result = findF.find()
+                if (result.nonEmpty()) return result
+                sleep(50)
+                c++
+            }
+            return null
+        }
     this.clickRegTextCenter = function (str) {
         if (!str)
             return false;
@@ -129,12 +147,14 @@ function Maid(packageName) {
         shell(command, true);
     };
     this.launch = function () {
-        launch(this.packageName);
+        toastLog("启动应用: " + this.packageName)
+        return $launch(this.packageName);
     };
     this.waitForActivity = function (activityName) {
         waitForActivity(activityName);
     };
     this.launchActivity = function (activityName) {
+        
         shell("am start -n " + this.packageName + "/" + activityName, true);
         waitForActivity(activityName);
     };
