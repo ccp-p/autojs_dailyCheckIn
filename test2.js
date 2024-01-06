@@ -1,16 +1,57 @@
-
-toast(123)
-var window = floaty.rawWindow(
-    <canvas id="board" h="{{device.height}}" w="{{device.width}}" />
-  );
-  window.setTouchable(false);
-  setInterval(()=>{},3000)
-
-window.board.on("draw", function (canvas) {
-    var context = canvas.getContext("2d");
-    toast(context)
-  })
-
-  setTimeout(()=>{
-    w.close();
-}, 2000);
+"#EXTM3U
+#EXT-X-VERSION:3
+#EXT-X-TARGETDURATION:2
+#EXT-X-MEDIA-SEQUENCE:0
+#EXT-X-KEY:METHOD=AES-128,URI="https://ts2.hjf5e.com/hjstore/video/20231206/88179f910e5d3fd2824757a1a02697d0/enc_6764872.key",IV=0xdad3a613e3bace334558552f40dd35ec
+#EXTINF:1.250000,
+https://ts2.hjf5e.com/hjstore/video/20231206/88179f910e5d3fd2824757a1a02697d0/67648720srPvxBK_i0.ts
+#EXTINF:1.250000,
+https://ts2.hjf5e.com/hjstore/video/20231206/88179f910e5d3fd2824757a1a02697d0/67648720srPvxBK_i1.ts
+#EXTINF:1.250000,
+https://ts2.hjf5e.com/hjstore/video/20231206/88179f910e5d3fd2824757a1a02697d0/67648720srPvxBK_i2.ts
+#EXTINF:1.250000,
+https://ts2.hjf5e.com/hjstore/video/20231206/88179f910e5d3fd2824757a1a02697d0/67648720srPvxBK_i3.ts
+#EXTINF:1.250000,
+https://ts2.hjf5e.com/hjstore/video/20231206/88179f910e5d3fd2824757a1a02697d0/67648720srPvxBK_i4.ts
+#EXTINF:0.833333,
+https://ts2.hjf5e.com/hjstore/video/20231206/88179f910e5d3fd2824757a1a02697d0/67648720srPvxBK_i5.ts
+#EXTINF:1.250000,
+https://ts2.hjf5e.com/hjstore/video/20231206/88179f910e5d3fd2824757a1a02697d0/67648720srPvxBK_i6.ts
+#EXTINF:1.250000,
+https://ts2.hjf5e.com/hjstore/video/20231206/88179f910e5d3fd2824757a1a02697d0/67648720srPvxBK_i7.ts
+#EXTINF:1.250000,
+https://ts2.hjf5e.com/hjstore/video/20231206/88179f910e5d3fd2824757a1a02697d0/67648720srPvxBK_i8.ts
+#EXTINF:1.250000,
+https://ts2.hjf5e.com/hjstore/video/20231206/88179f910e5d3fd2824757a1a02697d0/67648720srPvxBK_i9.ts
+#EXTINF:1.250000,
+https://ts2.hjf5e.com/hjstore/video/20231206/88179f910e5d3fd2824757a1a02697d0/67648720srPvxBK_i10.ts
+#EXTINF:1.250000,
+https://ts2.hjf5e.com/hjstore/video/20231206/88179f910e5d3fd2824757a1a02697d0/67648720srPvxBK_i11.ts
+#EXTINF:1.250000,
+https://ts2.hjf5e.com/hjstore/video/20231206/88179f910e5d3fd2824757a1a02697d0/67648720srPvxBK_i12.ts
+#EXTINF:1.250000,
+https://ts2.hjf5e.com/hjstore/video/20231206/88179f910e5d3fd2824757a1a02697d0/67648720srPvxBK_i13.ts
+#EXTINF:1.250000,
+https://ts2.hjf5e.com/hjstore/video/20231206/88179f910e5d3fd2824757a1a02697d0/67648720srPvxBK_i14.ts
+#EXTINF:1.250000,
+https://ts2.hjf5e.com/hjstore/video/20231206/88179f910e5d3fd2824757a1a02697d0/67648720srPvxBK_i15.ts
+#EXTINF:1.250000,
+https://ts2.hjf5e.com/hjstore/video/20231206/88179f910e5d3fd2824757a1a02697d0/67648720srPvxBK_i16.ts
+#EXTINF:1.250000,
+https://ts2.hjf5e.com/hjstore/video/20231206/88179f910e5d3fd2824757a1a02697d0/67648720srPvxBK_i17.ts
+#EXTINF:1.250000,
+https://ts2.hjf5e.com/hjstore/video/20231206/88179f910e5d3fd2824757a1a02697d0/67648720srPvxBK_i18.ts
+#EXTINF:1.250000,
+https://ts2.hjf5e.com/hjstore/video/20231206/88179f910e5d3fd2824757a1a02697d0/67648720srPvxBK_i19.ts
+#EXTINF:1.250000,
+https://ts2.hjf5e.com/hjstore/video/20231206/88179f910e5d3fd2824757a1a02697d0/67648720srPvxBK_i20.ts
+#EXTINF:1.250000,j
+https://ts2.hjf5e.com/hjstore/video/20231206/88179f910e5d3fd2824757a1a02697d0/67648720srPvxBK_i21.ts
+#EXTINF:1.000000,
+https://ts2.hf5e.com/hjstore/video/20231206/88179f910e5d3fd2824757a1a02697d0/67648720srPvxBK_i22.ts
+#EXTINF:1.250000,
+https://ts2.hjf5e.com/hjstore/video/20231206/88179f910e5d3fd2824757a1a02697d0/67648720srPvxBK_i23.ts
+#EXTINF:1.250000,
+https://ts2.hjf5e.com/hjstore/video/20231206/88179f910e5d3fd2824757a1a02697d0/67648720srPvxBK_i24.ts
+#EXT-X-ENDLIST
+"

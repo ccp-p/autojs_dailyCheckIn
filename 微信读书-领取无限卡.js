@@ -5,9 +5,14 @@ var maid = new Maid("com.tencent.weread");
 var Unlock = require("./common/Unlock.js");
 
 var unlock = new Unlock();
+
+
 maid.before(true);
 unlock.unlock();
 
+sleep(1000)
+launch('org.autojs.autojsPro');
+sleep(1000)
 
 // maid.kill();
 maid.sleep(2);
@@ -23,16 +28,14 @@ const clickCenter = function (sel)  {
 }
 //  找到我的按钮Z
 text("阅读").waitFor();
-const meBounds = '810,1752,1080,1920'
 
-setScreenMetrics(1080, 1920);
-// click('我')
-click(meBounds)
+sleep(1000)
+// 我
+id('s2').findOne().click()
 
 sleep(1000)
 
-click('可兑')
-
+click('排行榜')
 
 sleep(1000)
 
